@@ -1,7 +1,3 @@
-#######################################
-#               Pacman                #
-#######################################
-
 # Pacman - https://wiki.archlinux.org/index.php/Pacman_Tips
 alias pacupg='sudo pacman -Syu'
 alias pacin='sudo pacman -S'
@@ -24,6 +20,23 @@ alias pacls='pacman -Ql'
 alias pacown='pacman -Qo'
 alias pacupd="sudo pacman -Sy"
 alias upgrade='sudo pacman -Syu'
+
+
+#own aliases
+alias pacres='sudo pacman -Rs'
+alias paccach='sudo paccache -rk'
+
+#Systemctl
+alias ctlstart='sudo systemctl start'
+alias ctlstat='sudo systemctl status'
+alias ctlstop='sudo systemctl stop'
+alias ctlon='sudo systemctl enable'
+alias ctloff='sudo systemctl disable'
+alias cls='clear'
+
+#Others
+alias src='source ~/.zshrc'
+alias n='nvim'
 
 function paclist() {
   # Based on https://bbs.archlinux.org/viewtopic.php?id=93683
@@ -181,4 +194,5 @@ if (( $+commands[yay] )); then
   alias yamir='yay -Syy'
   alias yaupd="yay -Sy"
   alias upgrade='yay -Syu'
+  alias yascc='yay -Scc --aur'
 fi
