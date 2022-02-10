@@ -24,7 +24,7 @@ alias upgrade='sudo pacman -Syu'
 
 #own aliases
 alias pacres='sudo pacman -Rs'
-alias paccach='sudo paccache -rk'
+alias paccach='sudo paccache -rk2'
 
 #Systemctl
 alias ctlstart='sudo systemctl start'
