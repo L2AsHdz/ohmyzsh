@@ -37,7 +37,6 @@ alias cls='clear'
 #Others
 alias src='source ~/.zshrc'
 alias ls='exa'
-alias cat='bat'
 alias n='nvim'
 
 function paclist() {
