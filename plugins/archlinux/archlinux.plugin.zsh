@@ -25,6 +25,8 @@ alias upgrade='sudo pacman -Syu'
 #own aliases
 alias pacres='sudo pacman -Rs'
 alias paccach='sudo paccache -rk2'
+alias paclast='cat /var/log/pacman.log | grep -i installed'
+alias cls='clear'
 
 #Systemctl
 alias ctlstart='sudo systemctl start'
@@ -32,7 +34,7 @@ alias ctlstat='sudo systemctl status'
 alias ctlstop='sudo systemctl stop'
 alias ctlon='sudo systemctl enable'
 alias ctloff='sudo systemctl disable'
-alias cls='clear'
+alias ctlrst='sudo systemctl restart'
 
 #Others
 alias src='source ~/.zshrc'
